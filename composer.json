@@ -1,5 +1,5 @@
 {
-	"name": "lagan/fileselect",
+	"name": "lagan/fileselect-property-controller",
 	"type": "library",
 	"description": "Controller for the Lagan fileselect property. Lets the user select a file from a directory.",
 	"keywords": ["lagan","file", "select","property","controller"],
@@ -11,5 +11,8 @@
 			"homepage": "http://www.hoverkraft.nl",
 			"role": "Developer"
 		}
-	]
+	],
+	"require": {
+		"php": ">=5.5.0"
+	}
 }
