@@ -1,5 +1,5 @@
 {
-	"name": "lagan/fileselect-property-controller",
+	"name": "lagan/property-fileselect",
 	"type": "library",
 	"description": "Controller for the Lagan fileselect property. Lets the user select a file from a directory.",
 	"keywords": ["lagan","file", "select","property","controller"],
@@ -17,7 +17,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "Lagan\\Property\\": "/"
+            "Lagan\\Property\\": "src/"
         }
     }
 }
