@@ -16,11 +16,12 @@ class Fileselect {
 	 * The options method returns all the optional values for this property.
 	 * $property['pattern'] contains the glob pattern to find the matching pathnames.
 	 *
+	 * @param bean		$bean		The Redbean bean object with the property.
 	 * @param array		$property	Lagan model property arrray.
 	 *
 	 * @return array	Array with nested arrays containing the path and the name of the file.
 	 */
-	public function options($property) {
+	public function options($bean, $property) {
 
 		$return = [];
 		$files = glob( $property['pattern'], GLOB_BRACE );
