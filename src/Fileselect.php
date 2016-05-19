@@ -24,7 +24,9 @@ class Fileselect {
 	public function options($bean, $property) {
 
 		$return = [];
-		$files = glob( $property['pattern'], GLOB_BRACE );
+		$extensions = str_replace('', ' ', $property['extensions']); // Remove spaces
+		$pattern = $property['directory'].'/*.{'.$extensions .'}'; // glob pattern
+		$files = glob( $pattern, GLOB_BRACE );
 		foreach ($files as $file) {
 			$return[] = [
 				'path' => substr( $file, strlen(APP_PATH) ),

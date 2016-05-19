@@ -3,7 +3,8 @@
 Lagan Fileselect Property Controller
 ====================================
 
-Controller for the Lagan fileselect property. Lets the user select a file from a directory.
+Controller for the Lagan fileselect property. Lets the user select a file from a directory.  
+To specify the directory and the filetypes to select, define the *extensions and *directory* property values.
 
 A property type controller can contain a set, read, delete and options method. All methods are optional.
 
