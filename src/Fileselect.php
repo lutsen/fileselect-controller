@@ -25,11 +25,11 @@ class Fileselect {
 
 		$return = [];
 		$extensions = str_replace('', ' ', $property['extensions']); // Remove spaces
-		$pattern = $property['directory'].'/*.{'.$extensions .'}'; // glob pattern
+		$pattern = APP_PATH . $property['directory'] . '/*.{' . $extensions . '}'; // glob pattern
 		$files = glob( $pattern, GLOB_BRACE );
 		foreach ($files as $file) {
 			$return[] = [
-				'path' => substr( $file, strlen(APP_PATH) ),
+				'path' => substr( $file, strlen( APP_PATH ) ),
 				'name' => basename($file)
 			];
 		}
